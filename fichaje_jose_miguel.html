@@ -3,11 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Fichaje de José Miguel Cuñao Ponce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; text-align: center; }
-    header { background: #007ACC; color: white; padding: 1em; font-size: 1.5em; }
-    iframe { border: none; width: 100%; height: 90vh; }
-    .mensaje { background: #fff8dc; color: #333; padding: 1em; font-size: 1em; border-bottom: 1px solid #ccc; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #007ACC;
+      color: white;
+      padding: 1em;
+      font-size: 1.5em;
+    }
+
+    .mensaje {
+      background: #fff8dc;
+      color: #333;
+      padding: 1em;
+      font-size: 1em;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .responsive-form {
+      position: relative;
+      width: 100%;
+      padding-top: 150%; /* Puedes ajustar el aspecto vertical aquí */
+    }
+
+    .responsive-form iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -18,7 +52,11 @@
   </div>
 
   <!-- Formulario precargado de José Miguel Cuñao Ponce -->
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdObo9CWQBXlLelfhLPOYvxy-Tb14dyf7APjHXNwMr0aksFlg/viewform?usp=pp_url&entry.2065469153=José+Miguel+Cuñao+Ponce&entry.221818317=12345678A" width="100%" height="815" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-
+  <div class="responsive-form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdObo9CWQBXlLelfhLPOYvxy-Tb14dyf7APjHXNwMr0aksFlg/viewform?usp=pp_url&entry.2065469153=José+Miguel+Cuñao+Ponce&entry.221818317=12345678A">
+      Cargando…
+    </iframe>
+  </div>
 </body>
 </html>
+
