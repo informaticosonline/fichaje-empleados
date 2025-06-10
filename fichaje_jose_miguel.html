@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Fichaje - José Miguel Cuñao Ponce</title>
+  <title>Fichaje - José Miguel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -36,18 +36,20 @@
       border-bottom: 1px solid #ccc;
     }
 
-    .responsive-form {
-      position: relative;
+    .iframe-container {
       width: 100%;
-      padding-top: 150%;
+      max-width: 480px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: none;
+      position: relative;
     }
 
-    .responsive-form iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .iframe-container iframe {
       width: 100%;
-      height: 100%;
+      height: 900px;
+      transform: translateY(-150px); /* Ajusta si ves mucho/muy poco */
       border: none;
     }
   </style>
@@ -55,19 +57,21 @@
 <body>
   <header>Control de Fichaje</header>
   <div class="subcabecera">
-    Trabajador: <strong>José Miguel Cuñao Ponce</strong> — DNI: <strong>12345678A</strong>
+    Trabajador: <strong>José Miguel</strong> — DNI: <strong>12345678A</strong>
   </div>
   <div class="mensaje">
-    ---
+    ⚠️ Escanee su código QR para acceder. Si necesita volver a fichar, vuelva a escanear.<br>
+    No recargue esta página manualmente.
   </div>
 
-  <div class="responsive-form">
+  <div class="iframe-container">
     <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdObo9CWQBXlLelfhLPOYvxy-Tb14dyf7APjHXNwMr0aksFlg/viewform?usp=pp_url&entry.1645539880=José+Miguel+Cuñao+Ponce&entry.280033779=12345678A">
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdObo9CWQBXlLelfhLPOYvxy-Tb14dyf7APjHXNwMr0aksFlg/viewform?usp=pp_url&entry.1645539880=José+Miguel&entry.280033779=12345678A">
       Cargando…
     </iframe>
   </div>
 </body>
 </html>
+
 
 
